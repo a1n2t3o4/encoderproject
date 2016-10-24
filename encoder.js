@@ -1,8 +1,58 @@
-$("#inputText").keydown(function(e) {
-  e.keyCode == 13;
-});
+var translation = {
 
-$("input[type='radio']").click(function() {
+65 : "a",
+66 : "b",
+67 : "c",
+68 : "d",
+69 : "e",
+70 : "f",
+71 : "g",
+72 : "h",
+73 : "i",
+74 : "j",
+75 : "k",
+76 : "l",
+77 : "m",
+78 : "n",
+79 : "o",
+80 : "p",
+81 : "q",
+82 : "r",
+83 : "s",
+84 : "t",
+85 : "u",
+86 : "v",
+87 : "w",
+88 : "x",
+89 : "y",
+90 : "z",
+91 : "a",
+31 : "",
+32 : ""
+
+}
+
+$("input[type='rtadio']").click(function() {
   $("input:checked").prop('checked', false);
   $(this).prop('checked', true);
-})
+});
+
+$("#inputArea").keydown(function(e) {
+
+    if ($("inut:checked").val() == "echo"){
+      $("#textArea").append(translation[e.keyCode]);
+    }
+
+$("#inputArea").keydown(function(e) {
+
+    if ($("inut:checked").val() == "cipher"){
+
+    }
+
+$("#inputArea").keydown(function(e) {
+
+    if ($("inut:checked").val() == "runes"){
+      $("#textArea").append("<img scr = 'images/runes" + ".git'>")
+    }
+
+});
