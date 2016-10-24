@@ -37,17 +37,23 @@ $("input[type='rtadio']").click(function() {
   $(this).prop('checked', true);
 });
 
+//echo
+
 $("#inputArea").keydown(function(e) {
 
     if ($("inut:checked").val() == "echo"){
       $("#textArea").append(translation[e.keyCode]);
     }
 
+//cipher
+
 $("#inputArea").keydown(function(e) {
 
     if ($("inut:checked").val() == "cipher"){
 
     }
+
+//runes
 
 $("#inputArea").keydown(function(e) {
 
