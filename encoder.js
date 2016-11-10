@@ -45,6 +45,25 @@ $("#inputArea").keydown(function(e) {
       $("#textArea").append(translation[e.keyCode]);
     }
 
+$("#inputArea").keydown(function(e) {
+
+   if(e.keyCode == 13) {
+   if ($("input:checked").val() == "echo") {
+
+        $("#textArea").append(document.getElementById('inputText').value += " ");
+        document.getElementById('inputText').value = "";
+
+}
+
+//runes
+
+    $("#inputArea").keydown(function(e) {
+
+        if ($("inut:checked").val() == "runes"){
+            $("#textArea").append("<img scr = 'images/runes" + ".git'>")
+        }
+     });
+
 //cipher
 
 $("#inputArea").keydown(function(e) {
@@ -53,13 +72,4 @@ $("#inputArea").keydown(function(e) {
 
     }
   });
-
-//runes
-
-$("#inputArea").keydown(function(e) {
-
-    if ($("inut:checked").val() == "runes"){
-      $("#textArea").append("<img scr = 'images/runes" + ".git'>")
-    }
-
-});
+  });
