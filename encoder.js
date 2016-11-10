@@ -52,6 +52,7 @@ $("#inputArea").keydown(function(e) {
     if ($("inut:checked").val() == "cipher"){
 
     }
+  });
 
 //runes
 
