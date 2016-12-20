@@ -41,16 +41,11 @@ $("input[type='rtadio']").click(function() {
 
 $("#inputArea").keydown(function(e) {
 
-    if ($("inut:checked").val() == "echo"){
-      $("#textArea").append(translation[e.keyCode]);
-    }
-
-$("#inputArea").keydown(function(e) {
-
    if(e.keyCode == 13) {
    if ($("input:checked").val() == "echo") {
 
         $("#textArea").append(document.getElementById('inputText').value += " ");
+          $("#textArea").append(translation[e.keyCode]);
         document.getElementById('inputText').value = "";
 
 }
